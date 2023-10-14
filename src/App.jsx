@@ -16,9 +16,8 @@ function App() {
   };
 
   return (
-    
     <div className='bg-blue-600 p-8 min-h-screen flex items-center justify-center'>
-      <div className='bg-white p-4 rounded-md shadow-md w-[20vw] mx-auto'>
+      <div className='bg-white p-4 rounded-md shadow-md w-[90vw] max-w-[400px] mx-auto'>
         <div className='text-xl text-center font-bold text-blue-500'>Calculator</div>
         <input type="text" value={result} disabled className='w-full p-2 mb-4' />
 
@@ -35,8 +34,6 @@ function App() {
           <button id='/' className='bg-blue-500 text-white p-2 rounded-md' onClick={handleClick}>
             /
           </button>
-          
-        
           <button id='7' className='bg-blue-500 text-white p-2 rounded-md' onClick={handleClick}>
             7
           </button>
@@ -49,7 +46,6 @@ function App() {
           <button id='*' className='bg-blue-500 text-white p-2 rounded-md' onClick={handleClick}>
             *
           </button>
-
           <button id='4' className='bg-blue-500 text-white p-2 rounded-md' onClick={handleClick}>
             4
           </button>
@@ -62,7 +58,6 @@ function App() {
           <button id='-' className='bg-blue-500 text-white p-2 rounded-md' onClick={handleClick}>
             -
           </button>
-
           <button id='1' className='bg-blue-500 text-white p-2 rounded-md' onClick={handleClick}>
             1
           </button>
@@ -75,14 +70,12 @@ function App() {
           <button id='+' className='bg-blue-500 text-white p-2 rounded-md' onClick={handleClick}>
             +
           </button>
-
           <button id='00' className='bg-blue-500 text-white p-2 rounded-md' onClick={handleClick}>
             00
           </button>
           <button id='0' className='bg-blue-500 text-white p-2 rounded-md' onClick={handleClick}>
             0
           </button>
-
           <button id='=' className='bg-green-500 text-white p-2 rounded-md col-span-2' onClick={calculate}>
             =
           </button>
